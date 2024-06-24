@@ -1,0 +1,1 @@
+ /Users/hobby/Desktop/bingo_tradicional/.dart_tool/flutter_build/b4026949d1dac41c2322225ae7b0ff0c/native_assets.yaml: 

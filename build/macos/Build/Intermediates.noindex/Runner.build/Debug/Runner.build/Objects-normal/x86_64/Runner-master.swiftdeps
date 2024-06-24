@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "382e461f2085b33fcc8b85ac9175be70ae7019940b98f2c884c582ca383d502d"
+build_start_time: [1719248427, 343844890]
+build_end_time: [1719248436, 671733856]
+inputs:
+  "/Users/hobby/Desktop/bingo_tradicional/macos/Flutter/GeneratedPluginRegistrant.swift": [1719248406, 785858392]
+  "/Users/hobby/Desktop/bingo_tradicional/macos/Runner/AppDelegate.swift": [1717692553, 0]
+  "/Users/hobby/Desktop/bingo_tradicional/macos/Runner/MainFlutterWindow.swift": [1717692553, 0]
