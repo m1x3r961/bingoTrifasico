@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # or the branch you use
+      - main # o la rama que uses
 
 jobs:
   build-and-deploy:
@@ -27,11 +27,8 @@ jobs:
       - name: Copy assets to build/web
         run: |
           mkdir -p build/web/assets/images
-          cp -r assets/images/* build/web/assets/images/
-          cp build/web/AssetManifest.json build/web/assets/
-          cp build/web/FontManifest.json build/web/assets/
-          cp build/web/NOTICES build/web/assets/
-
+          cp -r assets/images/* build/web/assets/images/ || true
+       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
