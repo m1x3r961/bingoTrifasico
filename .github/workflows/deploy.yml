@@ -1,9 +1,9 @@
-name: Deploy Flutter Web to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main # o la rama principal que usas
+      - main
 
 jobs:
   build-and-deploy:
@@ -16,13 +16,18 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.22.2'
+          flutter-version: '3.22.2' # Versión correcta de Flutter
 
       - name: Install dependencies
         run: flutter pub get
 
       - name: Build Flutter web
         run: flutter build web
+
+      - name: Copy assets to build/web
+        run: |
+          mkdir -p build/web/assets
+          cp -r assets/images build/web/assets
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
