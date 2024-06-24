@@ -1,6 +1,6 @@
-class Player {
+class BingoPlayer {
   String name;
   List<int> card;
 
-  Player({required this.name, required this.card});
+  BingoPlayer({required this.name, required this.card});
 }
