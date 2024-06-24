@@ -28,7 +28,10 @@ jobs:
         run: |
           mkdir -p build/web/assets/images
           cp -r assets/images/* build/web/assets/images/ || true
-       
+          cp build/web/AssetManifest.json build/web/assets/ || true
+          cp build/web/FontManifest.json build/web/assets/ || true
+          cp build/web/NOTICES build/web/assets/ || true
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
