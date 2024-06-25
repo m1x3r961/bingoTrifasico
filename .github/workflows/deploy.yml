@@ -27,7 +27,7 @@ jobs:
       - name: Copy assets to build/web
         run: |
           mkdir -p build/web/assets/images
-          cp -r assets/images/* build/web/assets/images/ || true
+          cp -r assets/images/* build/web/assets/assets/images/ || true
           cp build/web/AssetManifest.json build/web/assets/ || true
           cp build/web/FontManifest.json build/web/assets/ || true
           cp build/web/NOTICES build/web/assets/ || true
